@@ -1,0 +1,420 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+    font-family: "Roboto", sans-serif;
+    
+}
+/* Login Page Style */
+.container{
+    width: 100%;
+    height: 90vh;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 10rem;
+    padding-bottom: 4%;
+}
+.facebook{
+    width: 35rem;
+    height: 160px;
+    /* border: 1px solid red; */
+    text-align: justify;
+    
+}
+.facebook h3{
+    font-size: 4rem;
+    color: rgb(48, 48, 232);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.facebook p{
+    font-size: 18px;
+    word-spacing: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.loginForm{
+    width: 24rem;
+    height: 24rem;
+    border: 1px solid rgb(240, 232, 232);
+    padding-top: 20px;
+    border-radius: 12px;
+    /* filter: drop-shadow(1px 3px 3px #635454); */
+    box-shadow: 1px 3px 3px #635454;
+}
+.loginForm{
+    text-align: center;
+    background-color: #fff;
+   
+}
+.loginForm input{
+    width: 22rem;
+    height: 3.4rem;
+    margin: 8px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 0.5px solid gray;
+    outline: none;
+    border-radius: 8px;
+    transition: 0.5ms;
+}
+.loginForm input:focus{
+    border:2px solid blue;
+    transition: 0.5ms;
+}
+.loginForm button{
+    width: 22rem;
+    height: 3.4rem;
+    margin: 8px;
+    font-size: 15px;
+    border: 0.5px solid gray;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.loginForm #login{
+    background-color:rgb(48, 48, 232);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+.loginForm #forgot{
+    border: none;
+    border-bottom:0.5px solid gray ;
+    font-size: 18px;
+    color: blue;
+}
+.loginForm #creatNew{
+    margin-top: 10px;
+    height: 3.4rem;
+    width: 13rem;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+
+/* Main Page Style */
+body{
+    background-color:Honeydew;
+}
+
+nav {
+    width: 100%;
+    height: 53px;
+    border: 1px solid rgb(250, 247, 247);
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3%;
+    position: fixed;
+    box-shadow: 0px -2px 10px #aea8a8;
+    z-index: 5; 
+}
+nav .logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 10px;
+}
+nav .logo input {
+    position: relative;
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;    
+    background-color: Honeydew;
+    font-size: 15px;
+    padding-left: 30px; 
+    outline: none;
+    border: none;
+    background: transparent url(Images/icons8-search.svg) no-repeat 5px center;
+    background-size: 15px;
+}
+
+nav .logo input:focus {
+    background-image: none; 
+}                       
+nav ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav .firstUl{
+    gap: 8rem;
+    margin-right: 2rem;
+}
+nav .secondUl{
+    gap: 3rem;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.leftSide {
+    width: 20rem;
+    height: 100dvh;
+    position: fixed;
+    z-index: 1; /
+}
+
+
+
+
+/* Mid Section */
+.mid{
+    position: relative;
+    left: 29.5%;
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 47rem;
+    height: 100vh;
+    /* border: 1px solid blue; */
+
+}
+.mid .status{
+    padding: 10px;
+    position: relative;
+    width: 47rem;
+    height: 290px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+.status .boxes{
+    position: static;
+    width: 165px;
+    height: 270px;
+    /* border: 1px solid green; */
+    border-radius: 12px;
+    filter: drop-shadow(1px 3px 3px #4b4141);
+    cursor: pointer;
+
+    
+}
+.boxes .innerbox{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border: 4px solid blue;
+    border-radius: 50%;
+}
+.status span{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    position: relative;
+    top: 12rem;
+    left: 10px;
+    font-family: "Roboto", sans-serif;
+}
+.status .boxes:first-child{
+    background-image: url(Images/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.status .boxes .bottomdiv{
+    position: relative;
+    text-align: center;
+    padding-top: 24px;
+    top: 13.4rem;
+    width: 166px;
+    height: 56px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: white;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.status .boxes .bottomdiv img{
+    position: absolute;
+    left: 3.5rem ;
+    bottom: 2rem;
+
+}
+.mid .createpost #writepost{
+    width: 35rem;
+    height: 40px;
+    border-radius: 35px;
+    background-color: rgb(225, 231, 225);
+    padding-left: 2rem;
+    word-spacing: 3px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+}
+.mid .createpost{
+    padding-top: 10px;
+    padding-right: 30px;
+    position: relative;
+    left: 16px;
+    width: 96%;
+    height: 120px;
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px #aea8a8;
+   
+
+}
+.mid .createpost .firstdiv{
+    height: 40px;
+    /* border: 0.5px solid blue; */
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+
+}
+.mid .createpost .secondDiv{
+    width:80%;
+    height: 40px;
+    /* border: 0.5px solid blue; */
+    margin-left: 5rem;
+    margin-top: 2px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.mid .createpost .secondDiv p{
+    transform: translateY(40%); 
+    margin-right: 5rem;
+    font-weight: bold;
+}
+.secondDiv button{
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+
+}
+.secondDiv #UploadImage{
+    display: none;
+}
+.secondDiv label {
+    cursor: pointer;
+}
+.uploadDoc{
+    width: 45rem;
+    height: 25rem;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-left: 25px;
+    margin-bottom: 25px; 
+    box-shadow: 0px 2px 8px #aea8a8;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.proImage{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(Images/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid white;
+}
+
+/* Right Side */
+.right-side{
+    width: 20rem;
+    height: 100dvh;
+    position: fixed;
+    left: 83.5%;
+    z-index: 1;
+}
+.leftSide .profile{
+    margin: 10px 0px 0px -0px;
+    /* width: 250px; */
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    
+}
+.profile h3{
+    color: #635454;
+}
+.leftSide .profile ul li{
+    list-style: none;
+    position: relative; 
+    padding: 10px;
+    cursor: pointer;
+    width: 20rem;
+    border-radius: 12px;
+    
+}
+.leftSide .profile ul li:hover{
+    background-color:  rgb(230, 230, 224);
+}
+.profile p {
+    font-weight: bold;
+    position: absolute; 
+    top: 48%;
+    left: 55px; 
+    transform: translateY(-55%); 
+    color: rgb(33, 32, 32);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+.profile h3{
+    margin-left: 15px;
+    font-family: "Roboto", sans-serif;
+}
+.right-side .profile{
+    margin: 10px 0px 0px -0px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+.right-side .profile ul li{
+    list-style: none;
+    position: relative; 
+    padding: 10px;
+    cursor: pointer;
+}
+.right-side .profile ul li:hover{
+    background-color:  rgb(230, 230, 224);
+}
+.right-side .profile button{
+    margin: 0px 0px 10px 20px;
+    width: 6rem;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.right-side .profile .Delete{
+    color: black;
+    background-color: rgb(224, 218, 218);
+}
